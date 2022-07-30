@@ -1,22 +1,44 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Search from './components/Search';
+import SearchSelector from './components/header/SearchSelector';
+import Images from './components/Images';
+import Extended from './components/Extended';
 
-class App extends Component {
-  render() {
+const App = () => {
+
+  const [page, setPage] = useState("search");
+
+  const searchSelectedHandler = (search) => {
+
+    // setPage(search)
+
+    setPage( () => {return search})
+
+  }
+
+  if (page === "search"){
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Тут буде пошук</p>
+      <div>
+        <SearchSelector onSearchSelected={searchSelectedHandler} page={page} />
+        <Search/>
+      </div>
+    );
+  } else if (page === "images") {
+    return (
+      <div>
+        <SearchSelector onSearchSelected={searchSelectedHandler} page={page}/>
+        <Images/>
+      </div>
+    );
+  } else if (page === "extended") {
+    return (
+      <div>
+        <SearchSelector onSearchSelected={searchSelectedHandler} page={page}/>
+        <Extended/>
       </div>
     );
   }
-}
+};
 
 export default App;
