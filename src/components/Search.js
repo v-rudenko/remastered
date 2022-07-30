@@ -1,5 +1,5 @@
 import React from "react";
-import "./Search.css"
+import "./Search.css";
 
 const Search = () => {
   return (
@@ -9,14 +9,29 @@ const Search = () => {
           <h1>Bamboozle</h1>
         </div>
         <div className="search_string_div">
-          <input className="search_string" type="search" name="q" placeholder="Шукай зі мною!" />
+          <input
+            className="search_string"
+            type="search"
+            name="q"
+            placeholder="Шукай зі мною!"
+          />
         </div>
         <div className="search_button_div">
-          <input className="search_button" type="submit" value={"Час відґуґлити!"} />
-          <input className="search_button" type="submit" value={"Мені пощастить!"} />
+          <input
+            className="search_button"
+            type="submit"
+            value={"Час відґуґлити!"}
+          />
+          <input
+            className="search_button"
+            type="submit"
+            value={"Мені пощастить!"}
+          />
         </div>
+        <div>
           <input type="hidden" name="hl" value={"uk"} />
           <input type="hidden" name="lr" value={"(-lang_ru)"} />
+        </div>
       </form>
     </div>
   );
