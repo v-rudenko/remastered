@@ -17,6 +17,11 @@
   .search_selector button {
     background-color: #0064ff63;
   }
+  .search_selector button:hover {
+    cursor: pointer;
+    color: #1205c2;
+    background-color: rgba(28, 127, 241, 0.24);
+  }
 }
 
 .search_selector {
@@ -26,11 +31,5 @@
 .search_selector button {
   border: none;
   margin: 5px;
-}
-
-.search_selector button:hover {
-  cursor: pointer;
-  color: #1205c2;
-  background-color: rgba(28, 127, 241, 0.24);
 }
 /*# sourceMappingURL=SearchSelector.css.map */

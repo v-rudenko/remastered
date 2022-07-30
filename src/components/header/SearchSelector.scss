@@ -16,6 +16,11 @@
     button {
       background-color: #0064ff63;
     }
+    button:hover {
+      cursor: pointer;
+      color: #1205c2;
+      background-color: rgba(28, 127, 241, 0.24);
+    }
   }
 }
 
@@ -24,11 +29,5 @@
   button {
     border: none;
     margin: 5px;
-    
-  }
-  button:hover {
-    cursor: pointer;
-    color: #1205c2;
-    background-color: rgba(28, 127, 241, 0.24);
   }
 }

@@ -10,10 +10,10 @@ const SearchSelector = (props) => {
   if (props.page === "search") {
     return (
       <header className="search_selector">
-        <button onClick={clickHandler} value={"images"}>
+        <button className="search_selector_button" onClick={clickHandler} value={"images"}>
           Пошук зображень
         </button>
-        <button onClick={clickHandler} value={"extended"}>
+        <button className="search_selector_button" onClick={clickHandler} value={"extended"}>
           Розширений пошук
         </button>
       </header>
@@ -21,7 +21,7 @@ const SearchSelector = (props) => {
   } else {
     return (
       <header className="search_selector">
-        <button onClick={clickHandler} value={"search"}>
+        <button className="search_selector_button" onClick={clickHandler} value={"search"}>
           Звичайний пошук
         </button>
       </header>
