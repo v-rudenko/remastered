@@ -43,9 +43,8 @@ const SearchSelector = (props) => {
         <button
           className="search_selector_button"
           id="search_images_button"
-          onMouseEnter={pointerHandler}
+          onMouseOver={pointerHandler}
           onMouseLeave={mouseLeave}
-          // style={{backgroundColor: "#0064ffe8"}}
           onClick={clickHandler}
           value={"images"}
         >
@@ -54,9 +53,8 @@ const SearchSelector = (props) => {
         <button
           className="search_selector_button"
           id="search_extended_button"
-          onMouseEnter={pointerHandler}
+          onMouseOver={pointerHandler}
           onMouseLeave={mouseLeave}
-          // style={{backgroundColor: "#0064ffe8"}} 
           onClick={clickHandler}
           value={"extended"}
         >
@@ -69,6 +67,8 @@ const SearchSelector = (props) => {
       <header className="search_selector">
         <button
           className="search_selector_button"
+          onMouseOver={pointerHandler}
+          onMouseLeave={mouseLeave}
           onClick={clickHandler}
           value={"search"}
         >
