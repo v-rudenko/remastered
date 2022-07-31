@@ -1,14 +1,15 @@
 import React from "react";
+import "./Images.css";
 const Images = () => {
   return (
-    <div>
+    <div className="common_form">
       <form action="https://google.com/search">
         <div>
           <h1>Bamboozle</h1>
           <h2>Для зображень</h2>
         </div>
-        <div>
-          <input type="search" name="q" placeholder="Не любиш читати? Шукай картинки!" />
+        <div className="search_string_div">
+          <input className="search_string" type="search" name="q" placeholder="Не любиш читати? Шукай картинки!" />
           <input type="hidden" name="tbm" value={"isch"} />
         </div>
         <div>
