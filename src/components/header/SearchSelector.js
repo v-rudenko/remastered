@@ -4,7 +4,7 @@ import "./SearchSelector.css";
 
 const SearchSelector = (props) => {
 
-  const [buttonStyle, SetButtonStyle] = useState("blue");
+  const [buttonStyle, SetButtonStyle] = useState("#0064ff63");
 
   const clickHandler = (event) => {
     console.log(event.target.value);
@@ -25,15 +25,16 @@ const SearchSelector = (props) => {
 
   const pointerHandler = (event) => {
     console.log("Змінити колір на...");
+    SetButtonStyle("red");
     console.log(buttonStyle);
-    SetButtonStyle("grey");
-    event.target.style.backgroundColor = buttonStyle;
+    event.target.style.backgroundColor = "#0064ffe8";
+    event.target.style.cursor = "pointer";
   };
   const mouseLeave = (event) => {
     console.log("Змінити колір на...");
     console.log(buttonStyle);
-    SetButtonStyle("blue");
-    event.target.style.backgroundColor = buttonStyle;
+    SetButtonStyle("#0064ff63"); 
+    event.target.style.backgroundColor = "#0064ff63";
   };
 
   if (props.page === "search") {
@@ -44,7 +45,7 @@ const SearchSelector = (props) => {
           id="search_images_button"
           onMouseEnter={pointerHandler}
           onMouseLeave={mouseLeave}
-          style={{backgroundColor: buttonStyle}}
+          // style={{backgroundColor: "#0064ffe8"}}
           onClick={clickHandler}
           value={"images"}
         >
@@ -53,6 +54,9 @@ const SearchSelector = (props) => {
         <button
           className="search_selector_button"
           id="search_extended_button"
+          onMouseEnter={pointerHandler}
+          onMouseLeave={mouseLeave}
+          // style={{backgroundColor: "#0064ffe8"}} 
           onClick={clickHandler}
           value={"extended"}
         >
