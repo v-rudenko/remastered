@@ -1,5 +1,5 @@
 import React from "react";
-import "./Search.css";
+// import "./Search.css";
 
 const Search = () => {
   return (
@@ -25,6 +25,7 @@ const Search = () => {
           <input
             className="search_button"
             type="submit"
+            name="btnI"
             value={"Мені пощастить!"}
           />
         </div>

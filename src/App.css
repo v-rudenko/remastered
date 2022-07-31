@@ -22,6 +22,7 @@
   font-size: 80px;
   font-weight: 500;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .search_string_div {
@@ -50,6 +51,7 @@
   height: 44px;
   padding-left: 55px;
   padding-top: 0px;
+  font-size: 20px;
 }
 
 .search_button_div {
@@ -71,5 +73,6 @@
 .search_button:hover {
   border: 1px solid darkgray;
   background-color: #848427a1;
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

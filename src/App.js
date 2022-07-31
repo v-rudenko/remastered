@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+
+// import './components/header/SearchSelector.css';
 import Search from './components/Search';
 import SearchSelector from './components/header/SearchSelector';
 import Images from './components/Images';
@@ -13,7 +15,8 @@ const App = () => {
 
     // setPage(search)
 
-    setPage( () => {return search})
+    // setPage( () => {return search})
+    setPage(search);
 
   }
 

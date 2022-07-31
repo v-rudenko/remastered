@@ -2,7 +2,7 @@
   .search_selector {
     text-align: left;
   }
-  .search_selector button {
+  .search_selector_button {
     height: 40px;
     font-size: 11px;
     background-color: #0064ff63;
@@ -14,13 +14,8 @@
     text-align: right;
     font-size: 20px;
   }
-  .search_selector button {
+  .search_selector_button {
     background-color: #0064ff63;
-  }
-  .search_selector button:hover {
-    cursor: pointer;
-    color: #1205c2;
-    background-color: rgba(28, 127, 241, 0.24);
   }
 }
 
@@ -28,8 +23,10 @@
   margin: 20px;
 }
 
-.search_selector button {
+.search_selector_button {
   border: none;
   margin: 5px;
+  background-color: #0064ff63;
+  color: black;
 }
 /*# sourceMappingURL=SearchSelector.css.map */
