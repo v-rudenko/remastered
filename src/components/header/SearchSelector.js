@@ -25,13 +25,13 @@ const SearchSelector = (props) => {
 
   const pointerHandler = (event) => {
     console.log("Змінити колір на...");
-    console.log(event);
-    SetButtonStyle("red");
+    console.log(buttonStyle);
+    SetButtonStyle("grey");
     event.target.style.backgroundColor = buttonStyle;
   };
   const mouseLeave = (event) => {
     console.log("Змінити колір на...");
-    console.log(event);
+    console.log(buttonStyle);
     SetButtonStyle("blue");
     event.target.style.backgroundColor = buttonStyle;
   };
