@@ -1,19 +1,30 @@
-import React from "react";
-// import "./Search.css";
+import React, { useState } from "react";
+import "./Search.css";
 
 const Search = () => {
+  const [searchRequest, setSearchRequest] = useState("");
+
+  const redirect = (event) => {
+    window.location.href = `https://www.google.com/search?q=${searchRequest}&btnI=Мені+пощастить&hl=uk&sxsrf=ALiCzsZ_1HEku9MwBNy-C3NMuSX5bzFLwA:1659345536449&source=hp&ei=gJrnYs-0F5SAxc8Py76b-AI&iflsig=AJiK0e8AAAAAYueokM8nsCg6xtYHqLLNiElqg68zlin7&lr=(-lang_ru)`;
+  };
+  const inputChangeHandler = (event) => {
+    setSearchRequest(event.target.value);
+  };
+
   return (
     <div className="common_form">
       <form action="https://google.com/search">
         <div>
-          <h1>Bamboozle</h1>
+          <h1 id="search_title">Bamboozle</h1>
         </div>
         <div className="search_string_div">
           <input
             className="search_string"
             type="search"
             name="q"
-            placeholder="Шукай зі мною!"
+            placeholder="Хто шукає – той знайде!"
+            onChange={inputChangeHandler}
+            value={searchRequest}
           />
         </div>
         <div className="search_button_div">
@@ -22,12 +33,7 @@ const Search = () => {
             type="submit"
             value={"Час відґуґлити!"}
           />
-          <input
-            className="search_button"
-            type="submit"
-            name="btnI"
-            value={"Мені пощастить!"}
-          />
+          <button type="button" onClick={redirect} className="search_button">Мені пощастить!</button>
         </div>
         <div>
           <input type="hidden" name="hl" value={"uk"} />

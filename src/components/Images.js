@@ -5,11 +5,16 @@ const Images = () => {
     <div className="common_form">
       <form action="https://google.com/search">
         <div>
-          <h1>Bamboozle</h1>
+          <h1 id="img_search_title">Bamboozle</h1>
           <h2>Для зображень</h2>
         </div>
         <div className="search_string_div">
-          <input className="search_string" type="search" name="q" placeholder="Не любиш читати? Шукай картинки!" />
+          <input
+            className="search_string"
+            type="search"
+            name="q"
+            placeholder="Не любиш читати? Шукай картинки!"
+          />
           <input type="hidden" name="tbm" value={"isch"} />
         </div>
         <div>
