@@ -42,17 +42,7 @@ const SearchSelector = (props) => {
   if (props.page === "search") {
     return (
       <header className="search_selector">
-        <button
-          style={{display: "none"}}
-          className="search_selector_button"
-          id="search_images_button"
-          onMouseOver={pointerHandler}
-          onMouseLeave={mouseLeave}
-          onClick={clickHandler}
-          value={"images"}
-        >
-          Пошук зображень
-        </button>
+        <div></div>
         <button
           className="search_selector_button"
           id="search_images_button"
