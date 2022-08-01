@@ -5,7 +5,7 @@ const Search = () => {
   const [searchRequest, setSearchRequest] = useState("");
 
   const redirect = (event) => {
-    window.location.replace(`https://www.google.com/search?q=${searchRequest}&btnI=Мені+пощастить&sourceid=navclient&gfns=1`);
+    window.location.replace(`https://www.google.com/search?q=${searchRequest}&btnI=Мені+пощастить&sourceid=navclient&gfns=1&lr=(-lang_ru)`);
   };
   const inputChangeHandler = (event) => {
     setSearchRequest(event.target.value);
