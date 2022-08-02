@@ -13,17 +13,6 @@ const SearchSelector = (props) => {
     console.log(props.page);
     props.onSearchSelected(event.target.value);
   };
-  const selector_button = (
-    <button
-      className="search_selector_button"
-      id="search_images_button"
-      onPointerEnter={pointerHandler}
-      onClick={clickHandler}
-      value={"images"}
-    >
-      Пошук зображень
-    </button>
-  );
 
   const pointerHandler = (event) => {
     console.log("Змінити колір на...");
@@ -42,27 +31,28 @@ const SearchSelector = (props) => {
   if (props.page === "search") {
     return (
       <header className="search_selector">
-        <div></div>
-        <button
-          className="search_selector_button"
-          id="search_images_button"
-          onMouseOver={pointerHandler}
-          onMouseLeave={mouseLeave}
-          onClick={clickHandler}
-          value={"images"}
-        >
-          Пошук зображень
-        </button>
-        <button
-          className="search_selector_button"
-          id="search_extended_button"
-          onMouseOver={pointerHandler}
-          onMouseLeave={mouseLeave}
-          onClick={clickHandler}
-          value={"extended"}
-        >
-          Розширений пошук
-        </button>
+        <div>
+          <button
+            className="search_selector_button"
+            id="search_images_button"
+            onMouseOver={pointerHandler}
+            onMouseLeave={mouseLeave}
+            onClick={clickHandler}
+            value={"images"}
+          >
+            Пошук зображень
+          </button>
+          <button
+            className="search_selector_button"
+            id="search_extended_button"
+            onMouseOver={pointerHandler}
+            onMouseLeave={mouseLeave}
+            onClick={clickHandler}
+            value={"extended"}
+          >
+            Розширений пошук
+          </button>
+        </div>
       </header>
     );
   } else {
