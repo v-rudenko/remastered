@@ -7,3 +7,32 @@ h2 {
   color: #003fff;
   margin-bottom: 0px;
 }
+
+#img_search_string_div {
+  width: 100%;
+  max-width: 582px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  input {
+    position: relative;
+  }
+  button {
+    position: absolute;
+    height: 43px;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    background-color: #72aeff;
+    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/search--v1.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    background-position-y: center;
+    background-position-x: 1rem;
+  }
+  button:hover {
+    background-color: #2470d8;
+  }
+}

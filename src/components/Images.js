@@ -9,12 +9,15 @@ const Images = () => {
           <h2>Для зображень</h2>
         </div>
         <div className="search_string_div">
-          <input
-            className="search_string"
-            type="search"
-            name="q"
-            placeholder="Не любиш читати? Шукай картинки!"
-          />
+          <div id={"img_search_string_div"}>
+            <input
+              className="search_string"
+              type="search"
+              name="q"
+              placeholder="Не любиш читати? Шукай картинки!"
+            />
+            <button></button>
+          </div>
           <input type="hidden" name="tbm" value={"isch"} />
         </div>
         <div>
