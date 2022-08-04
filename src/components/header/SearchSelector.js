@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./SearchSelector.css";
 
-
 const SearchSelector = (props) => {
-
   const [buttonStyle, SetButtonStyle] = useState("#0064ff63");
 
   const clickHandler = (event) => {
@@ -24,7 +22,7 @@ const SearchSelector = (props) => {
   const mouseLeave = (event) => {
     console.log("Змінити колір на...");
     console.log(buttonStyle);
-    SetButtonStyle("#0064ff63"); 
+    SetButtonStyle("#0064ff63");
     event.target.style.backgroundColor = "#0064ff63";
   };
 
@@ -53,6 +51,24 @@ const SearchSelector = (props) => {
             Розширений пошук
           </button>
         </div>
+      </header>
+    );
+  } else if (props.page === "extended") {
+    return (
+      <header>
+        <div className="search_selector">
+          <button
+            className="search_selector_button"
+            onMouseOver={pointerHandler}
+            onMouseLeave={mouseLeave}
+            onClick={clickHandler}
+            value={"search"}
+          >
+            Звичайний пошук
+          </button>
+        </div>
+        <div id="search_selector_label"><label>Розширений пошук</label></div>
+        <div className="terminator"></div>
       </header>
     );
   } else {

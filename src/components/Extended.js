@@ -2,7 +2,7 @@ import React from "react";
 
 const Extended = () => {
   return (
-    <h1>Розширений пошук</h1>
+    <h1>Тестовий рядок</h1>
   );
 }
 
