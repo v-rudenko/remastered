@@ -4,9 +4,8 @@ h2 {
   margin-top: 0px;
 }
 
-.img_search_title {
-  color: #003fff;
-  margin-bottom: 0px;
+#img_search_title {
+  margin-bottom: -5px;
 }
 
 #img_search_string_div {
@@ -29,6 +28,7 @@ h2 {
 
 #img_search_string_div input {
   position: relative;
+  padding-left: 15px;
 }
 
 #img_search_string_div button {
@@ -43,7 +43,7 @@ h2 {
   background-repeat: no-repeat;
   width: 60px;
   background-position-y: center;
-  background-position-x: 1rem;
+  background-position-x: 0.8rem;
 }
 
 #img_search_string_div button:hover {

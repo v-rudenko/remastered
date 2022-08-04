@@ -19,6 +19,7 @@ const Search = () => {
         </div>
         <div className="search_string_div">
           <input
+            id="common_search_string"
             className="search_string"
             type="search"
             name="q"

@@ -8,7 +8,7 @@
   }
 }
 @media (max-height: 500px) {
-  #search_title {
+  #search_title, #img_search_title {
     margin-top: -10%;
   }
 }
@@ -49,20 +49,22 @@
 }
 
 .search_string {
-  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/search--v1.png);
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 1rem;
   outline: none;
   border: 1px solid gray;
   border-radius: 25px;
   width: 95%;
   max-width: 582px;
   height: 44px;
-  padding-left: 55px;
   padding-right: 10px;
   padding-top: 0px;
   font-size: 20px;
+}
+#common_search_string {
+  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/search--v1.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 1rem;
+  padding-left: 55px;
 }
 
 .search_button_div {
@@ -75,7 +77,6 @@
   border: none;
   background-color: rgba(201, 201, 41, 0.432);
   border-radius: 12px;
-  // font-size: 20px;
   margin: 10px;
   margin-top: 20px;
   height: 36px;
