@@ -1,0 +1,22 @@
+.adv_search_field {
+  display: flex;
+  align-items: center;
+  label {
+    width: 16%;
+    min-width: 167px;
+  }
+}
+.adv_search_div {
+  margin-top: 40px;
+  margin-left: 45px;
+  .adv_search_field {
+    margin-top: 20px;
+  }
+}
+
+.adv_search_input {
+
+  input {
+    line-height: 1.5rem;
+  }
+}
