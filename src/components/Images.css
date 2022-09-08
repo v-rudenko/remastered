@@ -11,26 +11,15 @@ h2 {
 #img_search_string_div {
   width: 100%;
   max-width: 582px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
 }
-
 #img_search_string_div input {
   position: relative;
   padding-left: 15px;
 }
-
 #img_search_string_div button {
   position: absolute;
   height: 43px;
@@ -45,8 +34,6 @@ h2 {
   background-position-y: center;
   background-position-x: 0.8rem;
 }
-
 #img_search_string_div button:hover {
   background-color: #2470d8;
-}
-/*# sourceMappingURL=Images.css.map */
+}/*# sourceMappingURL=Images.css.map */

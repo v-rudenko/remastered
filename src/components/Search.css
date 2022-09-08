@@ -7,43 +7,30 @@
     margin-top: 0px;
   }
 }
-
 @media (max-height: 500px) {
   #search_title, #img_search_title {
     margin-top: -10%;
   }
 }
-
 @media (min-width: 500px) {
   .search_button {
     font-size: 20px;
   }
 }
-
 @media (max-width: 700px) {
   #search_title, #img_search_title {
     font-size: 60px;
   }
 }
-
 .common_form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 11%;
 }
-
 .common_form form {
   width: 90%;
 }
-
 .common_form h1 {
   text-align: center;
   font-family: Futuria;
@@ -55,16 +42,9 @@
 }
 
 .search_string_div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .search_string {
@@ -104,7 +84,6 @@
 
 .search_button:hover {
   border: 1px solid darkgray;
-  background-color: #848427a1;
+  background-color: rgba(132, 132, 39, 0.631372549);
   cursor: pointer;
-}
-/*# sourceMappingURL=Search.css.map */
+}/*# sourceMappingURL=Search.css.map */

@@ -8,7 +8,7 @@ const ExtendedField = props => {
     <div className="adv_search_input">
       <input type="text" />
     </div>
-    <div>
+    <div className={'adv_search_description'}>
       {props.description}
       <span>{props.example}</span>
     </div>

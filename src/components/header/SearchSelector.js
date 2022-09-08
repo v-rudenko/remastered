@@ -30,26 +30,28 @@ const SearchSelector = (props) => {
     return (
       <header className="search_selector">
         <div>
-          <button
-            className="search_selector_button"
-            id="search_images_button"
-            onMouseOver={pointerHandler}
-            onMouseLeave={mouseLeave}
-            onClick={clickHandler}
-            value={"images"}
-          >
-            Пошук зображень
-          </button>
-          <button
-            className="search_selector_button"
-            id="search_extended_button"
-            onMouseOver={pointerHandler}
-            onMouseLeave={mouseLeave}
-            onClick={clickHandler}
-            value={"extended"}
-          >
-            Розширений пошук
-          </button>
+          <div>
+            <button
+              className="search_selector_button"
+              id="search_images_button"
+              onMouseOver={pointerHandler}
+              onMouseLeave={mouseLeave}
+              onClick={clickHandler}
+              value={"images"}
+            >
+              Пошук зображень
+            </button>
+            <button
+              className="search_selector_button"
+              id="search_extended_button"
+              onMouseOver={pointerHandler}
+              onMouseLeave={mouseLeave}
+              onClick={clickHandler}
+              value={"extended"}
+            >
+              Розширений пошук
+            </button>
+          </div>
         </div>
       </header>
     );
@@ -67,7 +69,9 @@ const SearchSelector = (props) => {
             Звичайний пошук
           </button>
         </div>
-        <div id="search_selector_label"><label>Розширений пошук</label></div>
+        <div id="search_selector_label">
+          <label>Розширений пошук</label>
+        </div>
         <div className="terminator"></div>
       </header>
     );

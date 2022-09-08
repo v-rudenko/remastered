@@ -46,6 +46,7 @@ const Extended = () => {
         description={contentUkr.descriptions[3]}
         example={contentUkr.examples[3]}
       />
+      
 </div>
   );
 };

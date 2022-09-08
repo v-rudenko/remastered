@@ -1,12 +1,7 @@
 .adv_search_field {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .adv_search_field label {
   width: 16%;
   min-width: 167px;
@@ -16,7 +11,6 @@
   margin-top: 40px;
   margin-left: 45px;
 }
-
 .adv_search_div .adv_search_field {
   margin-top: 20px;
 }
@@ -24,4 +18,15 @@
 .adv_search_input input {
   line-height: 1.5rem;
 }
-/*# sourceMappingURL=Extended.css.map */
+
+.adv_search_description {
+  margin-left: 20px;
+}
+
+.adv_search_input {
+  width: 100%;
+  max-width: 568px;
+}
+.adv_search_input input {
+  width: 100%;
+}/*# sourceMappingURL=Extended.css.map */
